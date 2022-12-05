@@ -1,0 +1,10 @@
+<%- include("partials/header") %> 
+<h1>Home </h1>
+
+<p><%= homeText %> </p>
+<% postsMin.forEach(function (postMin){%>
+    <h1><%= postMin.titleMin %> </h1>
+    <p> <%= postMin.bodyMin %> <a href="/posts/<%= postMin.titleMin %> " >Read More</a> </p>
+<%})%>
+
+<%- include("partials/footer") %> 
